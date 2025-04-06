@@ -16,9 +16,6 @@ jobs:
       pages: write
       id-token: write
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }} # Optional: adds deployment URL
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
